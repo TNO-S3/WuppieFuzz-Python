@@ -1,0 +1,4 @@
+[run]
+omit =
+    */sitecustomize.py
+    /usr/lib/python*
