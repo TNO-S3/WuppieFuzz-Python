@@ -115,7 +115,7 @@ in a browser by opening `index.html`.
 - The html-dump command, which signals to the TCP server to dump the coverage in
   html format.
 
-A command is always preprended with the following byte-sequence:
+A command is always prepended with the following byte-sequence:
 `0xDE, 0xAD, 0xC0, 0xDE`. After the byte sequence a string of four characters in
 UTF-8 is expected must be one of: `["init", "text", "html"]`. Finally a single
 byte representing which coverage should be dumped.
