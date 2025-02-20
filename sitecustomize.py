@@ -437,7 +437,7 @@ if os.environ.get("COVERAGE_PROCESS_START"):
                 traceback.print_exc(excep)
 
         def start_listening(self) -> None:
-            print(f"Wuppiefuzz - Started listenening", flush=True)
+            print(f"Wuppiefuzz - Started listening", flush=True)
             connection, address = self.accept()
             print(f"WuppieFuzz - Incoming TCP connection from {address}", flush=True)
             try:
