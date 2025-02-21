@@ -353,7 +353,7 @@ if os.environ.get("COVERAGE_PROCESS_START"):
         DEBUG = True
         print("Enabled debug information")
 
-    PORT = os.environ.get("PORT_PYTHON_LCOV", 3001)
+    PORT = int(os.environ.get("PORT_PYTHON_LCOV", 3001))
 
     def create_dynamic_context_string(
         request_nb: int,
